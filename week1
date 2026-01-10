@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOMzLOGWDtEXCDE+Ywrp1km",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/seanmcconney10-rgb/pythonlearnin/blob/main/week1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "1NBPwfWUxcAb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "ac5b03f1-54a7-4d31-998c-796a62269e9e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "Give me a name: Mickey mouse\n",
+            "Mickey mouse\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(3*3)\n",
+        "my_name = input(\"Give me a name: \")\n",
+        "print(my_name)"
+      ]
+    }
+  ]
+}
