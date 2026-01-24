@@ -1,1 +1,62 @@
-
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNAgwJZeI0y4ixbCZlRCvv+",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/seanmcconney10-rgb/pythonlearnin/blob/main/week3\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name=\"sean\"\n",
+        "current_year=2026\n",
+        "birth_year=2006\n",
+        "age=current_year-birth_year\n",
+        "goal= \"be a decent programmer\"\n",
+        "print(\"=\" * 23)\n",
+        "print(\"My name is \" + name + \" and I am \" + str(age) + \" years old. My goal is \" + goal + \".\")\n",
+        "print(\"=\" * 23)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kC04-dTadSMR",
+        "outputId": "4dca533b-3b72-441d-9a75-88a6e052daa4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=======================\n",
+            "My name is sean and I am 20 years old. My goal is be a decent programmer.\n",
+            "=======================\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
