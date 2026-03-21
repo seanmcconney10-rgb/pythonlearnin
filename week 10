@@ -1,0 +1,57 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNpAwC4scPoegzTPZLhf5ZO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/seanmcconney10-rgb/pythonlearnin/blob/main/week%2010\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "players = []\n",
+        "\n",
+        "# Input loop\n",
+        "while True:\n",
+        "  name = input(\"enter player name (or 'quit' to stop):\")\n",
+        "\n",
+        "  if name.lower() == \"quit\":\n",
+        "    break\n",
+        "\n",
+        "  players.append(name)\n",
+        "\n",
+        "#search\n",
+        "search_name = input(\"\\nwgo would you like to search for? \")\n",
+        "if search_name in players:\n",
+        "  print(\"Result: Player found!\")\n",
+        "else:\n",
+        "  print(\"Result: Player not found.\")"
+      ],
+      "metadata": {
+        "id": "1KvUZI3fucTx"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
