@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN9B7+e1/ITuN+nfq1wC4hS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/seanmcconney10-rgb/pythonlearnin/blob/main/week%2011\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "students = {}\n",
+        "total = 0\n",
+        "count = 0\n",
+        "\n",
+        "while true:\n",
+        "  name = input(\"enter student name(or'done'): \")\n",
+        "  if name.lower() == 'done':\n",
+        "    break\n",
+        "  grade = float(input(f\"enter {name}'s grade: \"))\n",
+        "  students[name] = grade\n",
+        "  total += grade\n",
+        "  count += 1\n",
+        "\n",
+        "  print(\"\\n--- Class Report ---:\")\n",
+        "  for name, grade in students.items():\n",
+        "    print(f\"{name}: {grade}\"\n",
+        "\n",
+        "    if count:\n",
+        "      average = total / count\n",
+        "      print(f\"Class Average: {average_grade:.2}')\n",
+        "      else:\n",
+        "      Print(\"No students entered.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7Eo9M-h2cORK",
+        "outputId": "677e9efa-ae05-4113-840c-ee8b6dc94158"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "enter student name(or'done'): alice\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
