@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyN9B7+e1/ITuN+nfq1wC4hS",
+      "authorship_tag": "ABX9TyMwVX0Olle2vhyhvhLWepV2",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -33,39 +33,59 @@
         "total = 0\n",
         "count = 0\n",
         "\n",
-        "while true:\n",
+        "while True:\n",
         "  name = input(\"enter student name(or'done'): \")\n",
         "  if name.lower() == 'done':\n",
         "    break\n",
-        "  grade = float(input(f\"enter {name}'s grade: \"))\n",
+        "\n",
+        "  while True: # Loop to ensure valid grade input\n",
+        "    try:\n",
+        "      grade_input = input(f\"enter {name}'s grade: \")\n",
+        "      grade = float(grade_input)\n",
+        "      break # Exit inner loop if grade is valid\n",
+        "    except ValueError:\n",
+        "      print(\"Invalid grade. Please enter a single numerical value.\")\n",
+        "\n",
         "  students[name] = grade\n",
         "  total += grade\n",
         "  count += 1\n",
         "\n",
-        "  print(\"\\n--- Class Report ---:\")\n",
+        "  print(\"\\n--- Class Report ---\")\n",
         "  for name, grade in students.items():\n",
-        "    print(f\"{name}: {grade}\"\n",
+        "    print(f\"{name}: {grade}\")\n",
         "\n",
-        "    if count:\n",
-        "      average = total / count\n",
-        "      print(f\"Class Average: {average_grade:.2}')\n",
-        "      else:\n",
-        "      Print(\"No students entered.\")"
+        "  if count > 0:\n",
+        "    average = total / count\n",
+        "    print(f\"Class Average: {average:.2f}\")\n",
+        "  else:\n",
+        "    print(\"No students entered.\")"
       ],
       "metadata": {
+        "id": "7Eo9M-h2cORK",
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "7Eo9M-h2cORK",
-        "outputId": "677e9efa-ae05-4113-840c-ee8b6dc94158"
+        "outputId": "fe4850a2-49af-4f32-e587-93c6024fac55"
       },
       "execution_count": null,
       "outputs": [
         {
-          "name": "stdout",
           "output_type": "stream",
+          "name": "stdout",
           "text": [
-            "enter student name(or'done'): alice\n"
+            "enter student name(or'done'): alice\n",
+            "enter alice's grade: 95\n",
+            "\n",
+            "--- Class Report ---\n",
+            "alice: 95.0\n",
+            "Class Average: 95.00\n",
+            "enter student name(or'done'): bob\n",
+            "enter bob's grade: 82\n",
+            "\n",
+            "--- Class Report ---\n",
+            "alice: 95.0\n",
+            "bob: 82.0\n",
+            "Class Average: 88.50\n"
           ]
         }
       ]
