@@ -1,0 +1,65 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/seanmcconney10-rgb/pythonlearnin/blob/main/week%2012\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "length = float(input(\"Enter length: \"))\n",
+        "width = float(input(\"Enter width: \"))\n",
+        "area = length * width\n",
+        "perimeter = 2*(length + width)\n",
+        "\n",
+        "print(\"\\n--- Results ---\")\n",
+        "print(f\"The area is: {area}\")\n",
+        "print(f\"the perimeter is: {perimeter}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5i81tRLjhXVW",
+        "outputId": "e37b0570-6fb9-4716-9fdb-d2d753271d6e"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter length: 10\n",
+            "Enter width: 5\n",
+            "\n",
+            "--- Results ---\n",
+            "The area is: 50.0\n",
+            "the perimeter is: 30.0\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOq/AgDVKwa/Y7gPkAyaQm2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
